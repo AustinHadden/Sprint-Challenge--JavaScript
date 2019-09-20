@@ -30,13 +30,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    `.map` copies one array into a new one while `.forEach` loops through every item into an array but doesn't make a new one.
+
 2. What is the difference between a function and a method?
+
+    A method is a function that's inside an Object.
 
 3. What is closure?
 
+    A closure is a piece of code that has been identified elsewhere so we can run it later.
+
 4. Describe the four rules of the 'this' keyword.
 
+    1. Window Binding - unless you use strict or one of the other rules "this" defaults to the window object or the global object in Node.
+    2. Implicit Binding - when the function is invoked "this" refers to what's left of the dot.
+    3. New Binding - using the new keyword constructs a new object and "this" points to it.
+    4. Explicit Binding - you can tell the javascript engine to set "this" to point to a certain value using call, appl, or bind.
+
 5. Why do we need super() in an extended class?
+
+    It takes the place of `Object.create` so the class can have all of the attributes and methods of the class it's extending.
 
 ## Project Set up
 
